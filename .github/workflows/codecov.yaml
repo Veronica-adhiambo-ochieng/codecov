@@ -12,7 +12,7 @@ jobs:
     - name: download dependencies
       run: go mod download
     - name: test and get coverage
-      run go test -race -coverageprofile=coverge.txt -covermode=atomic ./...
+      run go test -race -coverprofile=coverage.txt -covermode=atomic ./...
 
     - name: upload coverage
       uses: codecov/codecov-action@v4
